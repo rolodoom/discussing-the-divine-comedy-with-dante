@@ -1,0 +1,16 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import NavMenu from "@/components/NavMenu.astro";
+
+const { title, description, image = "/images/cover.png" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} image={image} />
+  </head>
+  <body class="bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100 text-lg">
+    <NavMenu />
+    <slot />
+  </body>
+</html>

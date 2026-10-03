@@ -1,0 +1,32 @@
+---
+import type { Character } from "@/data/characters";
+
+interface Props {
+  character: Character;
+}
+
+const { character } = Astro.props;
+---
+
+<div class="character-card">
+  <h2 class="font-display text-2xl font-bold text-slate-900 dark:text-slate-100 uppercase">
+    {character.name}
+  </h2>
+
+  <p class="mt-4 leading-relaxed text-slate-700 dark:text-slate-300">
+    {character.description}
+  </p>
+
+  <a
+    href={
+      character.wikipedia
+        ? `https://es.wikipedia.org/wiki/${character.wikipedia}`
+        : "/artists"
+    }
+    target={character.wikipedia ? "_blank" : undefined}
+    rel={character.wikipedia ? "noopener noreferrer" : undefined}
+    class="mt-6 inline-flex rounded-lg bg-slate-900 px-5 py-2.5 font-medium text-white transition hover:bg-slate-700 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-300"
+  >
+    {character.wikipedia ? "Ver en Wikipedia" : "Ver artistas"}
+  </a>
+</div>

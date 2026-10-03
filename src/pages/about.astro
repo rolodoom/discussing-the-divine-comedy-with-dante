@@ -1,0 +1,60 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import painting from "@/assets/painting.jpg";
+import { Image } from "astro:assets";
+import { Coffee, Heart } from "@lucide/astro";
+---
+
+<Layout
+  title="Acerca de"
+  description="Sobre esta guía interactiva de Discussing the Divine Comedy with Dante"
+>
+  <main class="mx-auto mt-6 max-w-3xl px-4 py-16">
+    <Image
+      src={painting}
+      alt="Discussing the Divine Comedy with Dante"
+      class="mx-auto size-64 rounded-full object-cover"
+      width={512}
+    />
+
+    <h1 class="uppercase mt-6 font-display text-center text-3xl font-bold text-slate-900 dark:text-slate-100">
+      Acerca de
+    </h1>
+
+    <article class="mt-10 space-y-5 leading-relaxed text-slate-700 dark:text-slate-300">
+      <p>
+        Esta es una guía interactiva de{" "}
+        <em>Discussing the Divine Comedy with Dante</em>, la pintura
+        colaborativa de los artistas chinos Dai Dudu, Li Tiezi y Zhang Anjun,
+        terminada en 2006.
+      </p>
+
+      <p>
+        La obra reúne a más de cien figuras históricas, culturales y científicas
+        de todos los tiempos en una sola escena. Dante Alighieri preside la
+        composición, pero a su alrededor conviven personajes tan dispares como
+        Leonardo da Vinci, Confucio, Napoleón, Beethoven, Charles Chaplin o
+        Marilyn Monroe.
+      </p>
+
+      <p>
+        El objetivo de este sitio es simple: ayudarte a recorrer la pintura y
+        reconocer a quién estás viendo. Cada figura está marcada sobre la imagen
+        original, y al pulsarla puedes leer una breve descripción y, si quieres
+        profundizar, saltar a su artículo en Wikipedia.
+      </p>
+      <p class="text-center mt-10">
+        Hecho con <Heart size={16} class="inline-block" /> mucho{" "}
+        <Coffee size={16} class="inline-block" /> Café, Astro y Tailwind por{" "}
+        <a
+          href="https://github.com/rolodoom"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-slate-900 dark:hover:text-slate-100"
+        >
+          RoLoDoOm
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

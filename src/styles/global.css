@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lato", system-ui, sans-serif;
+  --font-display: "Fjalla One", sans-serif;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
