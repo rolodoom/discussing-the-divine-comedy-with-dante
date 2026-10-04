@@ -5,6 +5,7 @@ An interactive guide to _Discussing the Divine Comedy with Dante_, the 2006 coll
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-GPL--3.0-blue)](https://raw.githubusercontent.com/rolodoom/discussing-the-divine-comedy-with-dante/master/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/062d2499-24b2-4eef-b1c8-8f235f5e4b25/deploy-status)](https://app.netlify.com/projects/ddc-with-dante/deploys)
 
 ## Preview
 
