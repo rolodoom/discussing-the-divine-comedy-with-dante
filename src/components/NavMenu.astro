@@ -62,6 +62,17 @@ const links = [
     setMenu(isMenuClosed())
   })
 
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      // Quitar la transición SOLO para este cierre
+      menu?.classList.remove('transition-opacity')
+      setMenu(false)
+
+      // Restaurarla inmediatamente para el próximo uso
+      menu?.classList.add('transition-opacity')
+    })
+  })
+
   window.addEventListener('pageshow', (event: PageTransitionEvent) => {
     if (event.persisted) setMenu(false)
   })
