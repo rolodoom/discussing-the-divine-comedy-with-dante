@@ -1,6 +1,6 @@
 # discussing-the-divine-comedy-with-dante
 
-An interactive guide to _Discussing the Divine Comedy with Dante_, the 2006 collaborative painting by Chinese artists Dai Dudu, Li Tiezi, and Zhang Anjun. The project lets users explore the painting and discover the more than 100 historical, cultural, and scientific figures depicted in the scene, with interactive markers, brief biographies, and links to Wikipedia for further reading. Built with Astro, Tailwind CSS, and modern web technologies.
+An interactive guide to _Discussing the Divine Comedy with Dante_, the 2006 collaborative painting by Chinese artists Dai Dudu, Li Tiezi, and Zhang Anjun. Explore the artwork with a smooth pan-and-zoom viewer, with mouse drag, scroll wheel, and pinch-to-zoom on touch devices, and discover the more than 100 historical, cultural, and scientific figures depicted in the scene through interactive markers, brief biographies, and links to Wikipedia for further reading. Built with Astro, Tailwind CSS, and TypeScript.
 
 ## Status
 
