@@ -1,6 +1,8 @@
 ---
 import { Menu, X } from '@lucide/astro'
 
+const isHome = Astro.url.pathname === '/'
+
 const links = [
   { href: '/', label: 'Inicio' },
   { href: '/artists', label: 'Artistas' },
@@ -8,7 +10,7 @@ const links = [
 ]
 ---
 
-<header class="fixed top-0 left-0 z-50 w-full">
+<header class={!isHome ? 'fixed top-0 left-0 z-50 w-full' : ''}>
   <nav class="flex items-center justify-between bg-slate-600 px-4 py-2 shadow-md dark:bg-slate-950">
     <a
       href="/"
