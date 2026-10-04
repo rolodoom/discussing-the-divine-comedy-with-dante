@@ -7,12 +7,12 @@ const isHome = Astro.url.pathname === '/'
 <footer
   class:list={[
     isHome
-      ? 'fixed right-0 bottom-0 left-0 bg-white py-2 text-center text-sm md:py-3 xl:py-4 dark:bg-slate-900'
-      : 'my-10 text-center text-sm'
+      ? 'fixed right-0 bottom-0 left-0 bg-white px-4 py-3 text-center text-sm leading-6 md:py-3 xl:py-4 dark:bg-slate-900'
+      : 'my-10 px-4 text-center text-sm leading-6'
   ]}
 >
-  Hecho con <Heart size={16} class="mb-1 inline-block text-red-600" /> mucho{' '}
-  <Coffee size={16} class="mb-1 inline-block text-yellow-700" /> Café, Astro y Tailwind por{' '}
+  Hecho con <Heart size={16} class="mx-1 mb-1 inline-block text-red-600" /> y mucho{' '}
+  <Coffee size={16} class="mx-1 mb-1 inline-block text-yellow-700" /> Café por{' '}
   <a
     href="https://github.com/rolodoom"
     target="_blank"
