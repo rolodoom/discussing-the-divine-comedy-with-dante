@@ -1,31 +1,21 @@
 ---
-import { characters } from "@/data/characters";
-import CharacterCard from "@/components/CharacterCard.astro";
+import { characters } from '@/data/characters'
+import CharacterCard from '@/components/CharacterCard.astro'
 
-import painting from "@/assets/painting.jpg";
-import { Image } from "astro:assets";
+import painting from '@/assets/painting.jpg'
+import { Image } from 'astro:assets'
 ---
 
 <section class="w-full">
-  <div class="relative aspect-[26/11.27] w-full @container">
-    <!-- <img
-      src="/images/painting.jpg"
-      alt="Discussing the Divine Comedy with Dante"
-      class="block size-full"
-    /> -->
-
-    <Image
-      src={painting}
-      alt="Discussing the Divine Comedy with Dante"
-      class="block size-full"
-    />
+  <div class="@container relative aspect-[26/11.27] w-full">
+    <Image src={painting} alt="Discussing the Divine Comedy with Dante" class="block size-full" />
 
     {characters.map((character) => (
       <button
         type="button"
         data-character-id={character.id}
         aria-label={character.name}
-        class="absolute z-10 flex size-[max(10px,1.6cqw)] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-slate-600 text-[max(0px,0.8cqw)] font-bold text-white shadow-lg before:absolute before:-inset-1 before:content-[''] hover:bg-white hover:text-slate-700"
+        class="absolute z-10 flex size-[max(10px,1.6cqw)] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-slate-600 text-[max(0px,0.7cqw)] text-white shadow-lg before:absolute before:-inset-1 before:content-[''] hover:bg-white hover:text-slate-700"
         style={`left: ${character.x}%; top: ${character.y}%`}
       >
         <span class="hidden md:inline">{character.id}</span>
@@ -36,14 +26,14 @@ import { Image } from "astro:assets";
 
 <dialog
   id="character-modal"
-  class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-2xl p-0 shadow-2xl backdrop:bg-black/60 bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100"
+  class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-2xl bg-white p-0 text-slate-900 shadow-2xl backdrop:bg-black/60 dark:bg-slate-800 dark:text-slate-100"
 >
   <div class="relative p-6">
     <button
       id="close-character-modal"
       type="button"
       aria-label="Cerrar"
-      class="absolute right-4 top-4 flex size-9 items-center justify-center rounded-full bg-slate-100 text-xl text-slate-600 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300 dark:hover:bg-slate-600"
+      class="absolute top-4 right-4 flex size-9 items-center justify-center rounded-full bg-slate-100 text-xl text-slate-600 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300 dark:hover:bg-slate-600"
     >
       ×
     </button>
@@ -59,37 +49,29 @@ import { Image } from "astro:assets";
 ))}
 
 <script>
-  const modal = document.querySelector<HTMLDialogElement>("#character-modal");
-  const content = document.querySelector<HTMLElement>(
-    "#character-modal-content",
-  );
-  const closeButton = document.querySelector<HTMLButtonElement>(
-    "#close-character-modal",
-  );
+  const modal = document.querySelector<HTMLDialogElement>('#character-modal')
+  const content = document.querySelector<HTMLElement>('#character-modal-content')
+  const closeButton = document.querySelector<HTMLButtonElement>('#close-character-modal')
 
-  document
-    .querySelectorAll<HTMLButtonElement>("[data-character-id]")
-    .forEach((button) => {
-      button.addEventListener("click", () => {
-        const id = button.dataset.characterId;
-        const template = document.querySelector<HTMLTemplateElement>(
-          `#character-${id}`,
-        );
+  document.querySelectorAll<HTMLButtonElement>('[data-character-id]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const id = button.dataset.characterId
+      const template = document.querySelector<HTMLTemplateElement>(`#character-${id}`)
 
-        if (!template || !modal || !content) return;
+      if (!template || !modal || !content) return
 
-        content.replaceChildren(template.content.cloneNode(true));
-        modal.showModal();
-      });
-    });
+      content.replaceChildren(template.content.cloneNode(true))
+      modal.showModal()
+    })
+  })
 
-  closeButton?.addEventListener("click", () => {
-    modal?.close();
-  });
+  closeButton?.addEventListener('click', () => {
+    modal?.close()
+  })
 
-  modal?.addEventListener("click", (event) => {
+  modal?.addEventListener('click', (event) => {
     if (event.target === modal) {
-      modal.close();
+      modal.close()
     }
-  });
+  })
 </script>

@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: "Lato", system-ui, sans-serif;
-  --font-display: "Fjalla One", sans-serif;
+  --font-sans: 'Lato', system-ui, sans-serif;
+  --font-display: 'Fjalla One', sans-serif;
 }
 
 button:not(:disabled) {

@@ -19,5 +19,10 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "prettier": "3.9.9",
+    "prettier-plugin-astro": "1.1.0",
+    "prettier-plugin-tailwindcss": "0.0.0-insiders.5b27f94"
   }
 }
