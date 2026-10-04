@@ -164,7 +164,7 @@ export const characters: Character[] = [
       'Escritor y periodista estadounidense, ganador del Premio Nobel de Literatura y autor de obras como El viejo y el mar.',
     wikipedia: 'Ernest_Hemingway',
     x: 31.22,
-    y: 39.98
+    y: 40.98
   },
   {
     id: '19',
@@ -387,8 +387,8 @@ export const characters: Character[] = [
     description:
       'Reina del Reino Unido y de otros reinos de la Mancomunidad desde 1952 hasta 2022.',
     wikipedia: 'Isabel_II_del_Reino_Unido',
-    x: 31.15,
-    y: 59.29
+    x: 32.15,
+    y: 56.29
   },
   {
     id: '44',
@@ -808,7 +808,7 @@ export const characters: Character[] = [
       'Naturalista británico que formuló la teoría de la evolución por selección natural.',
     wikipedia: 'Charles_Darwin',
     x: 59.23,
-    y: 81.95
+    y: 76.95
   },
   {
     id: '91',
@@ -826,7 +826,7 @@ export const characters: Character[] = [
       'Pintor rumano conocido principalmente por sus retratos y por sus pinturas de género.',
     wikipedia: 'Corneliu_Baba',
     x: 66.27,
-    y: 60.95
+    y: 61.95
   },
   {
     id: '93',
@@ -835,7 +835,7 @@ export const characters: Character[] = [
       'Artista italiano del Renacimiento, pintor, escultor, arquitecto y poeta, autor de obras como el David y los frescos de la Capilla Sixtina.',
     wikipedia: 'Miguel_Ángel',
     x: 69.83,
-    y: 71.36
+    y: 67.36
   },
   {
     id: '94',
@@ -843,8 +843,8 @@ export const characters: Character[] = [
     description:
       'Abogado y dirigente del movimiento de independencia de la India, asociado a la resistencia no violenta y la desobediencia civil.',
     wikipedia: 'Mahatma_Gandhi',
-    x: 67.15,
-    y: 83.39
+    x: 66.5,
+    y: 76.39
   },
   {
     id: '95',
@@ -853,7 +853,7 @@ export const characters: Character[] = [
       'General estadounidense y 34.º presidente de Estados Unidos, comandante aliado durante la Segunda Guerra Mundial en Europa.',
     wikipedia: 'Dwight_D._Eisenhower',
     x: 71.54,
-    y: 55.93
+    y: 56.93
   },
   {
     id: '96',
@@ -871,7 +871,7 @@ export const characters: Character[] = [
       'Pintor, dibujante y cartelista francés conocido por sus representaciones de la vida nocturna del París de finales del siglo XIX.',
     wikipedia: 'Henri_de_Toulouse-Lautrec',
     x: 76.93,
-    y: 74.31
+    y: 70.31
   },
   {
     id: '98',
@@ -880,7 +880,7 @@ export const characters: Character[] = [
       'Exjugador estadounidense de baloncesto, figura fundamental de la NBA y del deporte mundial.',
     wikipedia: 'Michael_Jordan',
     x: 78.56,
-    y: 58.95
+    y: 54.95
   },
   {
     id: '99',
