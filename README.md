@@ -8,9 +8,9 @@ An interactive guide to _Discussing the Divine Comedy with Dante_, the 2006 coll
 
 ## Preview
 
-[![Discussing the Divine Comedy with Dante](src/assets/screenshot.webp)](https://discussing-the-divine-comedy-with-dante.netlify.app)
+[![Discussing the Divine Comedy with Dante](src/assets/screenshot.webp)](https://ddc-with-dante.netlify.app)
 
-**[View Live Preview](https://discussing-the-divine-comedy-with-dante.netlify.app)**
+**[View Live Preview](https://ddc-with-dante.netlify.app)**
 
 ## Tech Stack
 
