@@ -1,0 +1,30 @@
+---
+import painting from '@/assets/painting.jpg'
+import { Image } from 'astro:assets'
+
+import PaintingMarkers from '@/components/PaintingMarkers.astro'
+import CharacterModal from '@/components/CharacterModal.astro'
+---
+
+<section class="w-full">
+  <div id="painting-viewer" class="relative h-dvh w-full overflow-hidden">
+    <div id="painting-canvas" class="absolute top-0 left-0">
+      <Image
+        src={painting}
+        alt="Discussing the Divine Comedy with Dante"
+        class="block size-full select-none"
+        draggable="false"
+      />
+
+      <PaintingMarkers />
+    </div>
+  </div>
+</section>
+
+<CharacterModal />
+
+<script>
+  import { initPaintingViewer } from '@/scripts/painting/viewer'
+
+  initPaintingViewer()
+</script>

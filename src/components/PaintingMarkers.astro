@@ -1,0 +1,15 @@
+---
+import { characters } from '@/data/characters'
+---
+
+{characters.map((character) => (
+  <button
+    type="button"
+    data-character-id={character.id}
+    aria-label={character.name}
+    class="absolute z-10 flex size-6 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-slate-600 text-xs text-white shadow-lg before:absolute before:-inset-1 before:content-[''] hover:bg-white hover:text-slate-700 xl:size-7 xl:text-sm"
+    style={`left: ${character.x}%; top: ${character.y}%`}
+  >
+    <span>{character.id}</span>
+  </button>
+))}

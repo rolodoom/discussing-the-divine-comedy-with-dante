@@ -1,28 +1,7 @@
 ---
 import { characters } from '@/data/characters'
 import CharacterCard from '@/components/CharacterCard.astro'
-
-import painting from '@/assets/painting.jpg'
-import { Image } from 'astro:assets'
 ---
-
-<section class="w-full">
-  <div class="@container relative aspect-[26/11.27] w-full">
-    <Image src={painting} alt="Discussing the Divine Comedy with Dante" class="block size-full" />
-
-    {characters.map((character) => (
-      <button
-        type="button"
-        data-character-id={character.id}
-        aria-label={character.name}
-        class="absolute z-10 flex size-[max(10px,1.6cqw)] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-slate-600 text-[clamp(0px,0.7cqw,13px)] text-white shadow-lg before:absolute before:-inset-1 before:content-[''] hover:bg-white hover:text-slate-700"
-        style={`left: ${character.x}%; top: ${character.y}%`}
-      >
-        <span class="hidden md:inline">{character.id}</span>
-      </button>
-    ))}
-  </div>
-</section>
 
 <dialog
   id="character-modal"
