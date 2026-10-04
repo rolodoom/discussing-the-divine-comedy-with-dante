@@ -1,24 +1,23 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+import Heading from '@/components/Heading.astro'
 
 import artists from '@/assets/artists.jpg'
 import { Image } from 'astro:assets'
 ---
 
 <Layout
-  title="Artists"
+  title="Artistas"
   description="Dai Dudu, Li Tiezi y Zhang Anjun, autores de Discussing the Divine Comedy with Dante"
 >
-  <main class="mx-auto mt-4 max-w-3xl px-4 py-16">
+  <main class="mx-auto mt-24 max-w-3xl px-4">
     <Image
       src={artists}
       alt="Dai Dudu, Li Tiezi y Zhang Anjun"
-      class="mx-auto size-64 rounded-full object-cover"
+      class="mx-auto mb-12 size-64 rounded-full object-cover"
     />
 
-    <h1 class="mt-6 text-center font-display text-3xl font-bold text-slate-900 uppercase dark:text-slate-100">
-      Dai Dudu, Li Tiezi y Zhang Anjun
-    </h1>
+    <Heading>Dai Dudu, Li Tiezi y Zhang Anjun</Heading>
 
     <article class="mt-10 space-y-5 leading-relaxed text-slate-700 dark:text-slate-300">
       <p>
@@ -89,7 +88,6 @@ import { Image } from 'astro:assets'
         contemporáneos, sigue ocurriendo cada vez que alguien se detiene frente al cuadro.
       </p>
     </article>
-
     <a
       href="/"
       class="mt-10 inline-flex items-center gap-2 text-slate-700 underline-offset-4 hover:underline dark:text-slate-300"

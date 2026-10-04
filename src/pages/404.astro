@@ -1,18 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Heading from '../components/Heading.astro'
+
+import { Construction } from '@lucide/astro'
 ---
 
-<Layout title="404 - Page Not Found" description="Page Not Found">
-  <main class="flex h-screen flex-col items-center justify-center gap-6">
-    <h1 class="text-3xl">404 - Page Not Found</h1>
+<Layout title="404 - Página no encontrada" description="Página no encontrada">
+  <main class="mx-auto mt-24 max-w-3xl px-4">
+    <div class="mb-12 flex justify-center">
+      <Construction class="size-24" />
+    </div>
+
+    <Heading>404 - Página no encontrada</Heading>
+
+    <article class="mt-10 space-y-5 leading-relaxed text-slate-700 dark:text-slate-300">
+      <p>
+        Lo sentimos, la página que buscas no existe o ha sido movida. Comprueba la dirección o
+        vuelve a la página de inicio.
+      </p>
+    </article>
     <a
       href="/"
-      class="group mt-4 flex min-w-44 items-center justify-center gap-2 rounded-xl border-2 border-transparent bg-slate-600 px-8 py-2 text-slate-100 transition-colors hover:border-slate-600 hover:bg-white hover:text-slate-600 dark:bg-slate-200 dark:text-slate-800 dark:hover:border-slate-200 dark:hover:bg-slate-800 dark:hover:text-slate-200"
+      class="mt-10 inline-flex items-center gap-2 text-slate-700 underline-offset-4 hover:underline dark:text-slate-300"
     >
-      <span class="inline-block transition-transform duration-200 ease-out group-hover:-translate-x-1">
-        &larr;
-      </span>
-      Go Back
+      &larr; Volver al inicio
     </a>
   </main>
 </Layout>

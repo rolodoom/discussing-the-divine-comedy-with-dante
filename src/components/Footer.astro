@@ -1,0 +1,24 @@
+---
+import { Coffee, Heart } from '@lucide/astro'
+
+const isHome = Astro.url.pathname === '/'
+---
+
+<footer
+  class:list={[
+    isHome
+      ? 'fixed right-0 bottom-0 left-0 bg-white py-2 text-center text-sm md:py-3 xl:py-4 dark:bg-slate-900'
+      : 'my-10 text-center text-sm'
+  ]}
+>
+  Hecho con <Heart size={16} class="mb-1 inline-block text-red-600" /> mucho{' '}
+  <Coffee size={16} class="mb-1 inline-block text-yellow-700" /> Café, Astro y Tailwind por{' '}
+  <a
+    href="https://github.com/rolodoom"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="font-bold hover:text-slate-900 hover:underline hover:underline-offset-4 dark:hover:text-slate-100"
+  >
+    RoLoDoOm
+  </a>
+</footer>
